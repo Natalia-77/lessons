@@ -1,0 +1,83 @@
+@import url(reset.css);
+
+* {
+  color: rgb(3, 19, 34);
+}
+
+mark {
+  background-color: rgb(190, 190, 227);
+}
+
+h1 {
+  color: blue;
+}
+
+.navigate {
+  color: rgb(188, 228, 8);
+}
+
+.title {
+  color: rgb(54, 47, 135);
+}
+
+#today {
+  color: blue;
+}
+
+.city-today p {
+  color: gold;
+}
+
+.city-today > p {
+  color: cyan;
+}
+
+.city-today ~ p {
+  color: darkorange;
+}
+
+.city-image {
+  border: 1rem solid red;
+}
+
+.item-places + p {
+  color: blue;
+}
+
+.history-city,
+.description {
+  color: coral;
+}
+
+.city-places .city-subtitle {
+  color: rgb(135, 11, 135);
+}
+
+.today-description {
+  color: red;
+}
+
+.city-title.today-description {
+  background-color: rgb(20, 234, 152);
+  font: 1em sans-serif;
+}
+
+a.visit-us {
+  color: blue;
+}
+
+[class|="cities"] {
+  color: rgb(158, 185, 90);
+}
+
+[class*="lis"] {
+  color: darkgreen;
+}
+
+.cities-partners li {
+  color: darkred;
+}
+
+.footer-area .footer-items * {
+  color: rgb(103, 50, 97);
+}
