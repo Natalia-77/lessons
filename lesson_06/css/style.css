@@ -1,0 +1,203 @@
+/* Plagin */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&dispaly=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,600,700&display=swap");
+@import url(reset.css);
+@import url(fonts.css);
+
+.head {
+  color: #320b37;
+  text-shadow: 5px 5px 10px rgb(108, 33, 33);
+  text-align: center;
+  font-style: italic;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-decoration-line: underline;
+}
+
+.header-list > li > a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(0, 145, 255);
+  text-shadow: 5px 5px 10px rgb(186, 102, 102);
+  text-decoration: underline;
+}
+/* Room */
+.room-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.room-container {
+  max-width: 1070px;
+  margin: 0 auto 30px;
+}
+.title-room {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2; /* 48px/40 */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.img-room {
+  display: block;
+  width: 100%;
+  max-width: 1070px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+.room-description {
+  margin-bottom: 40px;
+  line-height: 1.875; /* 30px/16 */
+}
+.room-description p {
+  padding-bottom: 10px;
+}
+.room-description p:last-child {
+  padding-bottom: 0px;
+}
+.supplies-list {
+  margin-bottom: 30px;
+}
+.supplies-list > p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4; /* 28px/20 */
+  margin-bottom: 30px;
+}
+.item {
+  line-height: 1.875; /* 30px/16 */
+  background: url("../img/icon.png") 2px 2px / 32px no-repeat;
+  padding-left: 47px;
+  margin-bottom: 20px;
+}
+.list-items li:last-child {
+  margin-bottom: 0px;
+}
+.supplies-list + p {
+  line-height: 1.875; /* 30px/16 */
+  margin-bottom: 0px;
+}
+
+/* Section explore(with girl part) */
+.explore-section {
+  background: linear-gradient(
+    90deg,
+    rgb(95, 0, 136) 0%,
+    rgba(104, 47, 185, 1) 67%,
+    rgb(127, 57, 155) 85%,
+    rgb(87, 39, 129) 100%
+  );
+  color: white;
+  margin-bottom: 90px;
+}
+.explore-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../img/alphabet_patterns.png") right / contain no-repeat;
+}
+.container-items {
+  margin-top: 121px;
+  margin-bottom: 121px;
+  margin-right: 133px;
+  display: inline-block;
+  max-width: 600px;
+  width: 50%;
+}
+.title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2; /* 48/40 */
+  margin-bottom: 24px;
+}
+.description {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6; /* 32/20 */
+  margin-bottom: 24px;
+}
+.button-explore {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  line-height: 1.5625; /* 25/16 */
+  display: inline-block;
+  padding: 11px 20px;
+}
+.image-item {
+  display: inline-block;
+  max-width: 530px;
+  width: 100%;
+  vertical-align: top;
+}
+/* Section COLLECTION */
+.collection-section {
+  font-family: "Roboto";
+  background: url("../img/flower-pattern.png") center / contain no-repeat;
+  margin-bottom: 60px;
+  background-color: rgb(231, 219, 238);
+}
+.collection-container {
+  font-size: 0px;
+  width: 1226px;
+  margin: 0 auto;
+}
+.collection-items {
+  font-size: 0;
+  margin: 0 -19px;
+}
+.text-item {
+  max-width: 686px;
+  width: 50%;
+  margin: 74px 0px 124px 0px;
+  display: inline-block;
+  padding: 0 19px;
+}
+.title-collection {
+  font-size: 74px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 0.7432; /* 55px/74 */
+  letter-spacing: 0;
+  margin-bottom: 52px;
+}
+.description-collection {
+  margin-bottom: 66px;
+  font-size: 30px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.83333; /* 55px/30 */
+  text-transform: capitalize;
+}
+.button-shop {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 29px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #000;
+  padding: 19px 26px;
+}
+.image-itemw {
+  display: inline-block;
+  max-width: 428px;
+  width: 100%;
+  vertical-align: top;
+  border-radius: 160px 0;
+  border: 2px solid rgba(32, 26, 35, 0.989);
+  padding: 0 19px;
+}
+.image-product img {
+  border-radius: 160px 0;
+  margin: -20px 18px 20px -18px;
+}
