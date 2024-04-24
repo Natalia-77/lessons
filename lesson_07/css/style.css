@@ -1,0 +1,403 @@
+/* Plagin */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&dispaly=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jersey+20:regular&display=swap");
+@import url(reset.css);
+@import url(fonts.css);
+
+.head {
+  color: #320b37;
+  text-shadow: 5px 5px 10px rgb(13, 6, 96);
+  text-align: center;
+  font-style: italic;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-decoration-line: underline;
+}
+.head__title,
+.head__list {
+  margin-bottom: 20px;
+}
+.head__list > li {
+  margin-bottom: 10px;
+}
+.head__list > *:last-child {
+  margin-bottom: 0px;
+}
+.head__list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(0, 145, 255);
+  text-shadow: 5px 5px 10px rgb(186, 102, 102);
+  text-decoration: underline;
+}
+
+/* Room */
+.room {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.room__container {
+  max-width: 1070px;
+  margin: 0 auto 30px;
+}
+.room__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2; /* 48px/40 */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.room__image {
+  display: block;
+  width: 100%;
+  max-width: 1070px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+.room__description {
+  margin-bottom: 40px;
+  line-height: 1.875; /* 30px/16 */
+}
+.room__description p {
+  padding-bottom: 10px;
+}
+.room__description p:last-child {
+  padding-bottom: 0px;
+}
+.room__list {
+  margin-bottom: 30px;
+}
+.room__list > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4; /* 28/20 */
+  margin-bottom: 30px;
+}
+.room__items > p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4; /* 28px/20 */
+  margin-bottom: 30px;
+}
+.room__item {
+  position: relative;
+  line-height: 1.875; /* 30px/16 */
+  margin-bottom: 20px;
+}
+.room__item > p {
+  padding-left: 47px;
+}
+.room__item :last-child {
+  margin-bottom: 0px;
+}
+.room__item > p:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../img/mark.png") 0px 0px / 32px no-repeat;
+}
+.room__list + p {
+  line-height: 1.875; /* 30px/16 */
+}
+
+/* Section about me */
+.about-me {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.about-me__container {
+  max-width: 1512px;
+  margin: 0px auto;
+  background: url("../img/background-color.png") center no-repeat;
+}
+.about-me__info > * {
+  margin-bottom: 20px;
+}
+.about-me__info :last-child {
+  margin-bottom: 0px;
+}
+.about-me__info {
+  padding-left: 260px;
+  padding-right: 260px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.about-me__text {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.about-me__text > * {
+  margin-bottom: 20px;
+}
+.about-me__text :last-child {
+  margin-bottom: 0px;
+}
+.about-me__text > p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  line-height: 2.22; /* 40px/18 */
+  letter-spacing: -0.36px;
+  text-transform: capitalize;
+}
+.about-me__headline {
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.16; /* 70/60 */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 0px 300px;
+}
+.about-me__headline::after {
+  display: block;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(66, 255, 0, 1) 49%,
+    rgba(36, 0, 255, 1) 100%
+  );
+  height: 2px;
+  width: 100%;
+}
+.about-me__menu {
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  line-height: 1.25; /* 25px/20 */
+  letter-spacing: 0;
+  text-transform: capitalize;
+  padding-left: 181px;
+  margin-bottom: 120px;
+}
+.about-me__menu ul li {
+  display: inline-block;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  margin-right: 60px;
+}
+.about-me__menu * > :last-child {
+  margin-right: 0px;
+}
+.about-me__menu ul {
+  font-size: 0;
+}
+.about-me__menu ul:last-child {
+  margin-right: 0px;
+}
+.about-me__menu p {
+  font-size: 20px;
+}
+.about-me__menu p::after {
+  content: "";
+  background: url(../img/point.png);
+  width: 10px;
+  height: 10px;
+  margin-left: 60px;
+}
+.about-me__contact {
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  /* 20px/20 */
+  letter-spacing: -0.4px;
+  max-width: 959px;
+  padding-bottom: 110px;
+  margin: auto;
+}
+.about-me__contact ul {
+  font-size: 0;
+}
+.about-me__contact li {
+  display: inline-block;
+  font-size: 20px;
+}
+.about-me__contact li {
+  margin-right: 80px;
+}
+.about-me__contact li:last-child {
+  margin-right: 0;
+}
+.about-me__phone::before,
+.about-me__location::before,
+.about-me__email::before {
+  width: 20px;
+  margin-right: 20px;
+}
+.about-me__location {
+  text-transform: capitalize;
+}
+.about-me__phone::before {
+  content: "";
+  background-image: url("../img/сall.png");
+  height: 20px;
+}
+.about-me__location::before {
+  content: "";
+  background-image: url("../img/location.png");
+  height: 19.5px;
+}
+.about-me__email::before {
+  content: "";
+  background-image: url("../img/email.png");
+  height: 15px;
+}
+.about-me__phone:hover,
+.about-me__location:hover,
+.about-me__email:hover {
+  transform: scale(1.2);
+  color: #91f6fd;
+  text-decoration-line: underline;
+}
+
+/* # Game */
+.game {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: url(../img/game-background.jpg);
+}
+.game__container {
+  max-width: 1500px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.game__rule {
+  text-align: center;
+  color: rgb(227, 242, 16);
+  font-family: "Blagovest", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 1px -4px 10px rgba(29, 193, 234, 0.6);
+  margin-bottom: 15px;
+}
+.game__field {
+  overflow: clip;
+  min-height: 100%;
+}
+.game__block-1 {
+  width: 40px;
+  height: 100px;
+
+  background-color: yellow;
+}
+.game__block-2 {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(227, 242, 16);
+  visibility: hidden;
+}
+.game__block-1:hover + .game__block-2,
+.game__block-2:hover {
+  visibility: visible;
+}
+.game__block-3 {
+  width: 40px;
+  height: 100px;
+  background-color: rgb(227, 242, 16);
+  position: relative;
+  left: 98%;
+  visibility: hidden;
+}
+.game__block-4 {
+  width: 50%;
+  height: 30px;
+  position: relative;
+  left: 50%;
+  background-color: rgb(227, 242, 16);
+  visibility: hidden;
+}
+.game__block-2:hover + .game__block-3,
+.game__block-3:hover {
+  visibility: visible;
+}
+.game__block-3:hover + .game__block-4,
+.game__block-4:hover {
+  visibility: visible;
+}
+.game__block-5 {
+  width: 27px;
+  height: 100px;
+  background-color: rgb(227, 242, 16);
+  position: relative;
+  left: 50%;
+  visibility: hidden;
+}
+.game__block-4:hover + .game__block-5,
+.game__block-5:hover {
+  visibility: visible;
+}
+.game__block-6 {
+  width: 52%;
+  height: 40px;
+  background-color: rgb(227, 242, 16);
+  visibility: hidden;
+}
+.game__block-5:hover + .game__block-6,
+.game__block-6:hover {
+  visibility: visible;
+}
+.game__block-7 {
+  width: 20px;
+  height: 100px;
+  background-color: red;
+  visibility: hidden;
+  margin-right: 120px;
+  display: inline-block;
+}
+.game__block-6:hover + .game__block-7,
+.game__block-7:hover {
+  visibility: visible;
+}
+.game__block-8 {
+  visibility: hidden;
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  padding: 25px;
+  font-family: "BlackCasper", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  position: relative;
+  border: 4px solid black;
+  border-radius: 10px;
+  animation: go-left-right 4s infinite alternate;
+}
+.game__block-7:hover + .game__block-8 {
+  visibility: visible;
+}
+@keyframes go-left-right {
+  /* ім’я анімації: "go-left-right" */
+  from {
+    left: 0px;
+  } /* початок анімації від left: 0px */
+  to {
+    left: 50%;
+  } /* кінець анімації до left: 50% */
+}
