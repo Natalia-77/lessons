@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 11</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+
+      </div>
+    </header>
+    <main class="page">
+      <div class="page__transformation transformation">
+        <div class="transformation__container">
+          <h1 class="transformation__title">transformation examples</h1>
+          <div class="transformation__list">
+            <!-- #Translate -->
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">translate</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--translate">
+                    <span>Allows to move an element across the plane (translate(10%, 15%))</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Rotate -->
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">rotate</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--rotate">
+                    <span>Moves the element around a central point(rotate(-30deg))</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- #Scale -->
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">scale</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--scale">
+                    <span>Resizes the element(scale(-1, 1))</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Skew -->
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">skew</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--skew">
+                    <span>Allows to distort an element, by dragging its sides along a line basically(skew(10deg,
+                      10deg))</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">2D translate</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--mix">
+                    <span>2D translate(translate(10px, 20px) scale(0.8) rotate(30deg))</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">3D perspective</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__area">
+                  <div class="item-transformation__info item-transformation__info--perspective">
+                    <span>perspective: 500px; rotateX(65deg)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">3D perspective-origin:left</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__origin-left">
+                  <div class="item-transformation__info item-transformation__info--left-rotate">
+                    <span>transform: rotateY(20deg)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">3D perspective-origin:right</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__origin-right">
+                  <div class="item-transformation__info item-transformation__info--right-rotate">
+                    <span>transform:rotateX(-15deg)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__item item-transformation">
+              <h2 class="item-transformation__title">3D perspective-origin:top left</h2>
+              <div class="item-transformation__body">
+                <div class="item-transformation__bottom-right">
+                  <div class="item-transformation__info item-transformation__info--bottom-right">
+                    <span>transform: translateZ(50px)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- * Cards w/items -->
+          <div class="transformation__cards">
+            <div class="transformation__card card-item">
+              <div class="card-item__front card-item__front--pot">
+                <h1 class="card-item__title">Kitchen pot</h1>
+                <span class="card-item__price">$50</span>
+                <div class="card-item__back">
+                  <a href="#">Add to cart</a>
+                  <a href="#">View detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__card card-item">
+              <div class="card-item__front card-item__front--oven">
+                <h1 class="card-item__title">Large oven</h1>
+                <span class="card-item__price">$1500</span>
+                <div class="card-item__back">
+                  <a href="#">Add to cart</a>
+                  <a href="#">View detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="transformation__card card-item">
+              <div class="card-item__front card-item__front--grater">
+                <h1 class="card-item__title">Grater</h1>
+                <span class="card-item__price">$20</span>
+                <div class="card-item__back">
+                  <a href="#">Add to cart</a>
+                  <a href="#">View detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- * End cards w/items -->
+        </div>
+        <div class="transformation__car car">
+          <div class="car__container">
+            <div class="car__area">
+
+              <div class="car__body">
+                <div class="car__windows">
+                  <div class="car__back-window"></div>
+                  <div class="car__straight-window"></div>
+                </div>
+                <div class="car__line-back-door">
+                  <div class="car__hanger-back"></div>
+                </div>
+                <div class="car__line-straight-door">
+                  <div class="car__hanger-straight"></div>
+                </div>
+                <div class="car__lights"></div>
+                <div class="car__driver-window"></div>
+                <div class="car__flag"></div>
+              </div>
+              <div class="car__wheel"></div>
+              <div class="car__wheel-first"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+  </footer>
+</body>
+
+</html>

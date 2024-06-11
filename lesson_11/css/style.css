@@ -1,0 +1,409 @@
+/* Plagin */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&dispaly=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,600,700&display=swap");
+@import url(reset.css);
+@import url(fonts.css);
+
+/*# Common settings  */
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+[class*="__container"] {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-inline: 15px;
+  margin-bottom: 20px;
+}
+.page {
+}
+.page__transformation {
+  padding-block: 20px;
+}
+.transformation {
+}
+.transformation__container {
+}
+.transformation__title {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px black;
+  color: blue;
+}
+.transformation__title:not(:last-child) {
+  margin-bottom: 25px;
+}
+.transformation__list {
+  font-size: 0;
+  margin-inline: -20px;
+  margin-bottom: 30px;
+}
+.transformation__item {
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px;
+  width: 33.333%;
+  margin: 0 auto;
+}
+.item-transformation {
+}
+.item-transformation__title {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgb(239, 8, 8);
+  color: blue;
+}
+.item-transformation__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+.item-transformation__body {
+  border-radius: 10px;
+  position: relative;
+  max-width: 100%;
+  height: 250px;
+  background-color: #5856566c;
+}
+.item-transformation__info {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: #05225c;
+  color: rgb(227, 203, 194);
+  transition: transform 1s cubic-bezier(0.73, -0.01, 0.85, 1.03) 0.5s;
+}
+.item-transformation__area:hover {
+  .item-transformation__info--scale {
+    transform: scale(-1, 1);
+  }
+  .item-transformation__info--translate {
+    pointer-events: none;
+    transform: translate(10%, 15%);
+    color: chartreuse;
+    opacity: 0.9;
+  }
+  .item-transformation__info--rotate {
+    transform: rotate(-30deg);
+  }
+}
+.item-transformation__area:hover .item-transformation__info--skew {
+  transform: skew(10deg, 10deg);
+}
+.item-transformation__area:hover .item-transformation__info--mix {
+  transform: translate(10px, 20px) scale(0.8) rotate(30deg);
+}
+.item-transformation__area:hover .item-transformation__info--perspective {
+  transform: rotateX(35deg);
+}
+.item-transformation__origin-left {
+  perspective: 650px;
+  perspective-origin: left;
+}
+.item-transformation__origin-right {
+  perspective: 650px;
+  perspective-origin: right;
+}
+.item-transformation__bottom-right {
+  perspective: 800px;
+  perspective-origin: bottom right;
+}
+.item-transformation__origin-left:hover
+  .item-transformation__info--left-rotate {
+  transform: rotateY(20deg);
+}
+.item-transformation__origin-right:hover
+  .item-transformation__info--right-rotate {
+  transform: rotateX(-15deg);
+}
+.item-transformation__bottom-right:hover
+  .item-transformation__info--bottom-right {
+  transform: translateZ(50px);
+}
+.item-transformation__info span {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  font-size: 18px;
+  color: rgb(216, 202, 202);
+  padding-inline: 10px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+}
+.transformation__cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #ebe0e0;
+}
+.transformation__card {
+  position: relative;
+  height: 400px;
+  flex-basis: 200px;
+  flex-grow: 2;
+  perspective: 1200px;
+}
+.card-item__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 5s;
+  &.card-item__front--pot {
+    background: url("../img/products/soup-pot.webp") center/ cover no-repeat;
+  }
+  &.card-item__front--oven {
+    background: url("../img/products/oven.png") center/ cover no-repeat;
+  }
+  &.card-item__front--grater {
+    background: url("../img/products/grater.webp") center/cover no-repeat;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    transition: ease all 5s;
+  }
+}
+.card-item__title {
+  font-family: "DS Moster", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2c29c7;
+  text-shadow: 1px 1px 2px rgb(224, 208, 208), 0 0 1em blue, 0 0 0.2em blue;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  transition: ease all 2s;
+}
+.card-item__price {
+  font-family: "DS Moster", sans-serif;
+  font-size: 18px;
+  color: #a40d0d;
+  text-shadow: 1px 1px 2px rgb(224, 208, 208), 0 0 1em blue, 0 0 0.2em blue;
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  transition: ease all 2s;
+}
+.transformation__card:hover .card-item__front {
+  transform: rotateY(-180deg);
+  &::before {
+    transform: translateZ(40px);
+  }
+  .card-item__title {
+    transform: translateZ(25px);
+  }
+  .card-item__price {
+    transform: translateZ(25px);
+  }
+}
+.card-item__back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #84d744;
+  transform-style: preserve-3d;
+  transition: ease all 5s;
+  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  a {
+    transform: rotatey(-180deg) translateZ(25px);
+    background: red;
+    font-family: "DS Moster", sans-serif;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-weight: 200;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    &:hover {
+      background-color: #e706a0;
+      color: black;
+    }
+  }
+}
+.car__area {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: url("../img/road/road-view.jpg") center/ cover no-repeat;
+}
+.car__body {
+  position: absolute;
+  top: 70.5%;
+  right: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  width: 500px;
+  height: 150px;
+  border-radius: 46% 54% 95% 5% / 55% 94% 6% 45%;
+  z-index: 100;
+}
+.car__windows {
+  display: flex;
+  flex: 1 0 120px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+.car__straight-window {
+  border-radius: 0% 100% 97% 0% / 1% 100% 2% 99%;
+  width: 120px;
+  height: 80px;
+  background-color: black;
+  border: 2px solid black;
+  box-shadow: rgba(148, 148, 201, 0.25) 0px 30px 60px -12px inset,
+    rgba(218, 197, 197, 0.3) 0px 18px 36px -18px inset;
+}
+.car__back-window {
+  border-radius: 98% 2% 100% 0% / 55% 98% 2% 45%;
+  width: 120px;
+  height: 80px;
+  background-color: black;
+  border: 2px solid black;
+  box-shadow: rgba(148, 148, 201, 0.25) 0px 30px 60px -12px inset,
+    rgba(218, 197, 197, 0.3) 0px 18px 36px -18px inset;
+}
+.car__line-back-door {
+  width: 120px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: transparent;
+  position: absolute;
+  left: 20%;
+  top: 56%;
+}
+.car__hanger-back {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.car__line-straight-door {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: transparent;
+  position: absolute;
+  left: 48%;
+  top: 56%;
+}
+.car__hanger-straight {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.car__lights {
+  position: absolute;
+  right: 0%;
+  top: 60%;
+  width: 30px;
+  height: 10px;
+  border: 1px solid black;
+  background-color: #e1e4d6;
+  border-radius: 10rem 10rem 0 0;
+  transform: rotate(70deg);
+  transition: box-shadow 2s;
+  &:hover {
+    background-color: #d4e706;
+    box-shadow: 10px -15px 10px red;
+  }
+}
+.car__driver-window {
+  position: absolute;
+  left: 62%;
+  top: 15%;
+  background-color: #080808;
+  border: 2px solid black;
+  width: 140px;
+  height: 20px;
+  border-radius: 93% 7% 97% 3% / 1% 0% 100% 99%;
+  box-shadow: rgba(148, 148, 201, 0.25) 0px 30px 60px -12px inset,
+    rgba(65, 44, 44, 0.3) 0px 18px 36px -18px inset;
+  transform: rotate(-155deg);
+}
+.car__flag {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #e7e712;
+  &::before {
+    content: "";
+    background-color: #2c29c7;
+    width: 100%;
+    height: 50%;
+    vertical-align: top;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 2px;
+    background-color: #080808;
+  }
+}
+.car__wheel {
+  position: absolute;
+  bottom: 6%;
+  left: 30%;
+  width: 100px;
+  height: 100px;
+  background-color: #080808;
+  border-radius: 50%;
+  border: 3px solid #105b63;
+  border-bottom-color: #ffd34e;
+  transition: transform 1s;
+  z-index: 1;
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+.car__wheel-first {
+  position: absolute;
+  bottom: 6%;
+  left: 55%;
+  width: 100px;
+  height: 100px;
+  background-color: #080808;
+  border-radius: 50%;
+  border: 3px solid #105b63;
+  border-bottom-color: #ffd34e;
+  transition: transform 1s;
+  z-index: 1;
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
